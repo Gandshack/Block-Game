@@ -2,7 +2,7 @@
     "id": "4d0f94e6-ae58-42d8-859b-8a63e77f6f84",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprite20",
+    "name": "s_witch",
     "For3D": false,
     "HTile": false,
     "VTile": false,
