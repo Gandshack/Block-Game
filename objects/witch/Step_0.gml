@@ -4,4 +4,3 @@ if start == true {
 	alarm[0] = room_speed * 10;
 }
 
-//I'm a raging homosexual
