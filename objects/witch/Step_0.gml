@@ -3,3 +3,5 @@ move_towards_point(o_slime.x,o_slime.y,spd);
 if start == true {
 	alarm[0] = room_speed * 10;
 }
+
+//I'm a raging homosexual
