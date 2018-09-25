@@ -1,0 +1,1 @@
+cooldown2 = false;
