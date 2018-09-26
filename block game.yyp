@@ -671,14 +671,6 @@
             }
         },
         {
-            "Key": "b68d8a68-f3a4-4f05-9017-e4e872d4ef4c",
-            "Value": {
-                "id": "73038163-2635-4082-936e-2efddab5a571",
-                "resourcePath": "sprites\\s_portal1\\s_portal1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "b6e408fc-9558-464f-a24c-6a83dbd530e4",
             "Value": {
                 "id": "a64bc354-a44a-4910-a0e0-a3cde161830d",
