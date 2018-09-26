@@ -4,6 +4,7 @@ moveUp = keyboard_check(ord("W"));
 moveDown = keyboard_check(ord("S"));
 moveLeft = keyboard_check(ord("A"));
 moveRight = keyboard_check(ord("D"));
+escapeReleased = keyboard_check_released(vk_escape);
 
 //set hspd and vspd
 xx = moveRight - moveLeft;
@@ -15,7 +16,7 @@ if hspd != 0 && vspd != 0{
 	hspd = xx * (spd * 0.707);
 	vspd = yy * (spd * 0.707);
 }
-src_pushKey();
+src_push();
 src_movement(hspd,vspd);
 
 /*collision checking x
@@ -38,61 +39,62 @@ y += vspd; // set y movement
 if moveUp {
     if moveLeft {
         image_angle = 135;
-		instance_create_depth(x + 32,y + 32,1,o_slime);
+		instance_create_depth(x + 1,y + 1,1,o_slime);
     }
     else if moveRight {
         image_angle = 45;
-		instance_create_depth(x - 32,y + 32,1,o_slime);
+		instance_create_depth(x - 1,y + 1,1,o_slime);
     }
     else {
 		image_angle = 90;
-		instance_create_depth(x,y + 32,1,o_slime);
+		instance_create_depth(x,y + 1,1,o_slime);
 	}
 
 }
 else if moveDown {
     if moveLeft {
         image_angle = 225;
-		instance_create_depth(x + 32,y - 32,1,o_slime);
+		instance_create_depth(x +1,y - 1,1,o_slime);
 	}
     else if moveRight {
         image_angle = 315;
-		instance_create_depth(x - 32,y - 32,1,o_slime);
+		instance_create_depth(x - 1,y - 1,1,o_slime);
     }
 	else {
 		image_angle = 270;
-		instance_create_depth(x,y - 32,1,o_slime);
+		instance_create_depth(x,y - 1,1,o_slime);
 	}
 
 }
 else if moveLeft {
     if moveUp {
         image_angle = 135;
-		instance_create_depth(x + 32,y + 32,1,o_slime);
+		instance_create_depth(x + 1,y + 1,1,o_slime);
     }
     else if moveDown {
         image_angle = 225;
-		instance_create_depth(x + 32,y - 32,1,o_slime);
+		instance_create_depth(x + 1,y - 1,1,o_slime);
 	}
 	else {
 		image_angle = 180;
-		instance_create_depth(x + 32,y,1,o_slime);
+		instance_create_depth(x + 1,y,1,o_slime);
 	}
 }
 else if moveRight {
     if moveUp {
         image_angle = 45;
-		instance_create_depth(x - 32,y + 32,1,o_slime)
+		instance_create_depth(x - 1,y + 1,1,o_slime)
     }
     else if moveDown {
         image_angle = 315;
-		instance_create_depth(x + 32,y - 32,1,o_slime)
+		instance_create_depth(x + 1,y - 1,1,o_slime)
     }
     else {
 	image_angle = 0;
-	instance_create_depth(x - 32,y,1,o_slime);
+	instance_create_depth(x - 1,y,1,o_slime);
 	}
 }
+
 if escapeReleased == true{ 
 			esc += 1
 			if esc == 1 {
@@ -105,3 +107,13 @@ if escapeReleased == true{
 				esc = 0
 			}
 }
+
+
+
+
+
+
+
+
+
+
