@@ -16,7 +16,7 @@ if hspd != 0 && vspd != 0{
 	hspd = xx * (spd * 0.707);
 	vspd = yy * (spd * 0.707);
 }
-src_push();
+src_pushKey();
 src_movement(hspd,vspd);
 
 /*collision checking x
