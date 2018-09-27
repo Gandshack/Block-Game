@@ -12,10 +12,12 @@ yy = moveDown - moveUp;
 
 hspd = xx * spd;
 vspd = yy * spd;
-if hspd != 0 && vspd != 0{
+
+/*if hspd != 0 && vspd != 0{
 	hspd = xx * (spd * 0.707);
 	vspd = yy * (spd * 0.707);
-}
+}*/
+
 src_push();
 src_movement(hspd,vspd);
 

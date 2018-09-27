@@ -4,6 +4,7 @@ if place_meeting(x + hspd,y,o_block){
 		src_movement(o_player.hspd/2, 0);
 	}
 	hspd /= 2
+	
 }if place_meeting(x,y + vspd,o_block){
 	var block = instance_place(x,y + vspd,o_block);
 	with (block) {
@@ -11,7 +12,6 @@ if place_meeting(x + hspd,y,o_block){
 	}
 	vspd /= 2;
 }
-
 if place_meeting(x + hspd,y,o_block2){
 	var block2 = instance_place(x + hspd,y,o_block2);
 	with (block2) {
